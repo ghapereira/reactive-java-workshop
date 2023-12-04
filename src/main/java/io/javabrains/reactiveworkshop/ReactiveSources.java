@@ -41,13 +41,16 @@ public class ReactiveSources {
 
     public static Flux<User> userFlux() {
         return Flux.just(
-                new User(1, "Lionel", "Messi"),
-                new User(2, "Cristiano", "Ronaldo"),
-                new User(2, "Diego", "Maradona"),
-                new User(4, "Zinedine", "Zidane"),
-                new User(5, "Jürgen", "Klinsmann"),
-                new User(6, "Gareth", "Bale")
-        ).delayElements(Duration.ofSeconds(1));
+                new User(1, "Hulk", "Paraiba"),
+                new User(2, "Ronaldinho", "Gaucho"),
+                new User(3, "Paulinho", "Flecheiro"),
+                new User(4, "Dada", "Maravilha"),
+                new User(5, "Lionel", "Messi"),
+                new User(6, "Cristiano", "Ronaldo"),
+                new User(7, "Diego", "Maradona"),
+                new User(8, "Zinedine", "Zidane"),
+                new User(9, "Jürgen", "Klinsmann")
+        ).delayElements(Duration.ofSeconds(2));
     }
 
     public static Mono<User> userMono() {
